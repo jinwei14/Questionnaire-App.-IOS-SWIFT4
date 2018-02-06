@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Choices" representedClassName="Choices" syncable="YES">
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="choices" inverseEntity="Question" syncable="YES"/>
+    </entity>
+    <entity name="Question" representedClassName="Question" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questionContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="choices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Choices" inverseName="question" inverseEntity="Choices" syncable="YES"/>
+        <relationship name="questionnaire" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaire" inverseName="questions" inverseEntity="Questionnaire" syncable="YES"/>
+        <relationship name="response" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Responses" inverseName="question" inverseEntity="Responses" syncable="YES"/>
+    </entity>
+    <entity name="Questionnaire" representedClassName="Questionnaire" syncable="YES">
+        <attribute name="decription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questionnaireID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="questions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" inverseName="questionnaire" inverseEntity="Question" syncable="YES"/>
+    </entity>
+    <entity name="Responses" representedClassName="Responses" syncable="YES">
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questionnaireID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questionName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="response" inverseEntity="Question" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Choices" positionX="-119" positionY="54" width="128" height="88"/>
+        <element name="Question" positionX="-126" positionY="-459" width="128" height="148"/>
+        <element name="Questionnaire" positionX="315" positionY="-213" width="128" height="103"/>
+        <element name="Responses" positionX="-461" positionY="-297" width="128" height="118"/>
+    </elements>
+</model>

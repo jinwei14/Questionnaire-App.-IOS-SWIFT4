@@ -1,0 +1,10 @@
+
+platform :ios, '11.0'
+
+target 'COMP327_Assignment1_jinwei' do
+  use_frameworks!
+
+pod 'SVProgressHUD'
+pod "SwiftChart"
+
+end
