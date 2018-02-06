@@ -17,3 +17,9 @@ https://cgi.csc.liv.ac.uk/~phil/Teaching/COMP327/assignments/questionnaire.json
  Test your app with both questionnaires. The app must work in both portrait and landscape orientation, maintaining a sensible UI in both. 
  The reporting should consist of simple graphs (where the question types are appropriate) or text summaries (for text type response questions). 
  Please ensure that your code is appropriately commented and meaningful variable and constant names are used. 
+
+<img width="421" alt="1" src="https://user-images.githubusercontent.com/26280459/35873805-b8925a1c-0b62-11e8-906c-8fb2733a78d8.png">
+<img width="420" alt="2" src="https://user-images.githubusercontent.com/26280459/35873810-bd26e62e-0b62-11e8-89ee-7866bc2cc989.png">
+<img width="367" alt="3" src="https://user-images.githubusercontent.com/26280459/35873811-bf94a9e6-0b62-11e8-9b6b-6700becec3aa.png">
+<img width="324" alt="4" src="https://user-images.githubusercontent.com/26280459/35873816-c1443400-0b62-11e8-9f58-caf42fb5e2db.png">
+<img width="339" alt="5" src="https://user-images.githubusercontent.com/26280459/35873819-c2a528d6-0b62-11e8-8b62-9197ecd9e2d8.png">
